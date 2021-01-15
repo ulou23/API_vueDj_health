@@ -6,3 +6,5 @@ class ProviderNHS(models.Model):
     locality=models.CharField(max_length=80)
     regon_provider=models.IntegerField(default=0)
     covid_19=models.CharField(max_length=10)
+
+    objects=models.Manager()

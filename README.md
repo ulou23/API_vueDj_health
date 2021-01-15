@@ -1,13 +1,13 @@
 # DJANGO VUE API 
-BACKEND 
 
+BACKEND
 ## django 
 ## djangorestframework 
 ## corsheaders 
-# python-decouple
+## python-decouple
 ## postgreSQL   psycopg2
 
-FRONTEND  VUE.JS ...  vue-cli
+#FRONTEND  VUE.JS ...  vue-cli
 ## axios
 ## bootstrap-vue 
 

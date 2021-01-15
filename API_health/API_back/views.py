@@ -1,3 +1,12 @@
-from django.shortcuts import render
+from rest_framework import generics
+from .models import ProviderNHS
+from .serializers import ProviderSerializer
 
-# Create your views here.
+class ProviderListView(generics.ListAPIView):
+    queryset = ProviderNHS.objects.all()
+    serializer_class = ProviderSerializer
+
+
+class DetailProvider(generics.RetrieveAPIView):
+    queryset = ProviderNHS.objects.all()
+    serializer_class = ProviderSerializer
