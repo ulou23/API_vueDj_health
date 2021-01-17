@@ -1,7 +1,8 @@
 from django.urls import path
 
-from .views import ProviderListView
+from .views import ProviderListView,DetailProvider
 
 urlpatterns=[
-    path('', ProviderAPIView.as_view(),name='home')
+    path('',ProviderListView.as_view()),
+    path('<int:pk>/',DetailProvider.as_view()),
 ]
